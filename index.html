@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      background-color: skyblue;
+      margin: 0;
+      padding: 10px;
+      color: white;
+      border: 2px solid black;
+      font-size: 28px;
+    }
+
+    h1 .header-content {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .header-content img {
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .box {
+      width: 100%;
+    }
+
+    .sidebar {
+      float: left;
+      background-color: skyblue;
+      width: 20%;
+      height: calc(100vh - 52px);
+      padding: 4px;
+      border-width: 0px 2px 2px 2px;
+      border-style: solid;
+      border-color: black;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+      height: calc(100vh - 52px);
+      padding: 4px;
+      margin: 0px;
+      border-width: 0px 2px 2px 0px;
+      border-style: solid;
+      border-color: black;
+    }
+
+    p a {
+      padding: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    p a:hover {
+      color: blue;
+    }
+
+    iframe {
+      height: 100%;
+      width: 100%;
+      border: none;
+      margin: 0PX;
+      padding: 0PX;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    <span class="header-content">
+      <img src="https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/images/msulogo412.png" alt="MSU Logo"/>
+      Welcome to MSU !
+    </span>
+  </h1>
+
+  <div class="box">
+    <div class="sidebar">
+      <p><a href="https://msubaroda.ac.in/academics/FTE" target="cname">Home</a></p>
+      <p><a href="https://msubaroda.ac.in/academics/FTE/ContactUs" target="cname">Contact Us</a></p>
+      <p><a href="https://msubaroda.ac.in/Rti" target="cname">About</a></p>
+    </div>
+    <div class="content">
+      <iframe name="cname" src="https://msubaroda.ac.in/academics/FTE"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
