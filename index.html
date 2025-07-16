@@ -14,12 +14,13 @@
     }
 
     h1 {
+      text-align: center;
       background-color: skyblue;
       margin: 0;
-      padding: 30px;
+      padding: 1.5vh 0; /* responsive vertical padding */
       color: white;
       border: 2px solid black;
-      font-size: 50px;
+      font-size: 2.5vw; /* responsive font size */
     }
 
     h1 .header-content {
@@ -28,10 +29,10 @@
     }
 
     .header-content img {
-      width: 35px;
-      height: 35px;
+      width: 4vw;  /* scales with viewport width */
+      height: auto;
       vertical-align: middle;
-      margin-right: 10px;
+      margin-right: 1vw;
     }
 
     .box {
@@ -42,8 +43,8 @@
       float: left;
       background-color: skyblue;
       width: 20%;
-      height: calc(100vh - 52px);
-      padding: 4px;
+      height: calc(100vh - 8vh); /* adjust according to header height */
+      padding: 1vh;
       border-width: 0px 2px 2px 2px;
       border-style: solid;
       border-color: black;
@@ -52,8 +53,8 @@
     .content {
       float: left;
       width: 80%;
-      height: calc(100vh - 52px);
-      padding: 4px;
+      height: calc(100vh - 8vh);
+      padding: 1vh;
       margin: 0px;
       border-width: 0px 2px 2px 0px;
       border-style: solid;
@@ -61,23 +62,22 @@
     }
 
     p a {
-      padding: 5px;
+      display: inline-block;
+      padding: 1vh;
       cursor: pointer;
       text-decoration: none;
       color: white;
-      font-size: 15px;
+      font-size: 1.2vw;
     }
 
     p a:hover {
-      color: blue;
+      color: yellow;
     }
 
     iframe {
       height: 100%;
       width: 100%;
       border: none;
-      margin: 0PX;
-      padding: 0PX;
     }
   </style>
 </head>
@@ -85,8 +85,8 @@
 
   <h1>
     <span class="header-content">
-      <img src="https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/images/msulogo412.png" alt="MSU Logo"/>
-      Welcome to MSU !
+      <img src="https://msu-new-2023-ec2-ubuntu-unzip.s3.ap-south-1.amazonaws.com/asset/images/msulogo412.png" alt="MSU Logo" />
+      MSU
     </span>
   </h1>
 
